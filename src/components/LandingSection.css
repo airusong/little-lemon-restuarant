@@ -1,0 +1,30 @@
+.restaurant-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px; /* Adjust height as needed */
+    background-color: #495E57;
+  }
+  
+  .text-section {
+    flex: 1;
+    margin-left: 80px; /* Space between text and image */
+  }
+  
+  .image-section {
+    margin-top: 50px; 
+    flex: 1.5;
+  }
+  
+  .image-section img {
+    width: 50%; /* Adjust based on your preference */
+    height: auto;
+  }
+  
+  button {
+    background-color: gold; /* Example button styling */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
