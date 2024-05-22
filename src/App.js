@@ -10,12 +10,14 @@ import Menupage from "./components/Menupage";
 import Reservation from "./components/Reservation";
 import LandingSection from './components/LandingSection';
 import HighlightsSection from './components/HighlightsSection';
+import CustomerSection from './components/CustomerSection';
 function App() {
   return (
     <nav>
       <Header/>
       <LandingSection/>
       <HighlightsSection/>
+      <CustomerSection/>
     </nav>
   )
 }

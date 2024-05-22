@@ -25,13 +25,14 @@ const menus = [
 const HighlightsSection=()=>{
     return (
         <div className="highlights-container">
-            <Heading as="h1" id="projects-section">
+            <Heading as="h1" id="projects-section" margin={50}>
             This weeks specials
             </Heading>
             <Box
             display="grid"
             gridTemplateColumns="repeat(3,minmax(0,1fr))"
-            gridGap={8}
+            gridGap={15}
+            margin={50}
             >
            {menus.map((menu) => (
             <MenuCard
