@@ -3,7 +3,7 @@ import logo from '../assets/Logo.svg';
 import { Box,Stack, HStack, VStack } from '@chakra-ui/react'
 const Footer=(props)=>{
     return(
-        <footer className="footer-section" backgroundColor="#333333">
+        <footer className="footer-section" >
             <HStack spacing={8}>
             <Box margin={50}>
                 <img src={logo} alt="logo"/>
