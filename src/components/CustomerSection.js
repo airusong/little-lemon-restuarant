@@ -26,7 +26,7 @@ const reviews = [
   ];
 const customerSection = () => {
     return(
-        <FullScreenSection
+        <div
         isDarkBackground
         backgroundColor="#495E57"
         py={16}
@@ -50,7 +50,7 @@ const customerSection = () => {
                 />
             ))}
         </Box>
-        </FullScreenSection>
+        </div>
     )
 }
 export default customerSection;

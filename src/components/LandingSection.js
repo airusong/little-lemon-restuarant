@@ -3,7 +3,7 @@ import { Image,Avatar, HStack, Heading, VStack ,Box} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import logo from '../assets/restauranfood.jpg'; 
 import './LandingSection.css';
-
+import { Routes, Route, Link } from "react-router-dom";
 const Title = "Little Lemon";
 const name = "Chicago";
 const description1 = "We are a family owned"
@@ -21,7 +21,9 @@ const LandingSection = () => {
             <p>{description2}</p>
             <p>{description3}</p>
             <p>{description4}</p>
+            <Link to="/reserve">
             <button>Order Now</button>
+            </Link>
          </div>
          <div className="image-section">
             <img src={logo} alt="restaurant" />

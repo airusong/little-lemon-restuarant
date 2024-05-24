@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
-import { Routes, Route, Link } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 import Homepage from "./components/Homepage";
 import Menupage from "./components/Menupage";
 import Reservation from "./components/Reservation";
@@ -13,12 +13,15 @@ import HighlightsSection from './components/HighlightsSection';
 import CustomerSection from './components/CustomerSection';
 function App() {
   return (
-    <nav>
-      <Header/>
-      <LandingSection/>
-      <HighlightsSection/>
-      <CustomerSection/>
-    </nav>
+    
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Homepage/>} />
+          <Route path="/reserve" element={<Reservation/>} />
+          <Route path="/menu" element={<Menupage/>} />
+        </Routes>
+      </div>
+    
   )
 }
 
